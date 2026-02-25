@@ -221,7 +221,7 @@ bool MQTT::sendTopicConfig(const std::string &field,
 
     config["~"] = maintopic;
     config["uniq_id"] = configTopic;
-    config["obj_id"] = configTopic;
+    config["default_entity_id"] = configTopic;
     config["name"] = name;
 
     if (!icon.empty()) {
